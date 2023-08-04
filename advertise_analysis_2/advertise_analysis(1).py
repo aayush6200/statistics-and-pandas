@@ -1,3 +1,5 @@
+from sklearn.metrics import mean_squared_error
+from sklearn.linear_model import LinearRegression
 import pandas as pd
 
 r_path = './dataset/advertise_data.csv'
@@ -40,3 +42,20 @@ test_df.to_csv('test_data.csv', index=False)
 r1_path = './dataset/train_data.csv'
 
 # print(pd.read_csv(r1_path)) verified
+
+
+# building linear regression model from train_data
+
+
+train_df = pd.read_csv(r1_path)  # reading data to train
+
+x_train = train_df["TV"].values.reshape(-1, 1)
+y_train = train_df["sales"].values
+model = LinearRegression()
+model.fit(x_train, y_train)
+
+# for testing data
+y_pred = model.predict([[296.4]])
+print("Predicted sales:", y_pred[0])
+MSE = mean_squared_error(y_pred, [23.8])
+print("Mean Squared Error:", MSE)  # got 8.2

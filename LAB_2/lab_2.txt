@@ -1,4 +1,4 @@
-    This exercise involves the Auto data set studied in the lab. Make sure
+    This exercise involves the "Auto data" set studied in the lab. Make sure
     that the missing values have been removed from the data.
 
 (a) Which of the predictors are quantitative, and which are qualitative?

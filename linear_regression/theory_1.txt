@@ -1,0 +1,22 @@
+Collecting Data: Imagine you want to understand how TV advertising expenses are 
+                related to sales generated. You can't gather data from every single advertisement, 
+                so you collect samples of data representing different TV ad campaigns.
+
+Estimating Coefficients: For each sample, you perform linear regression to estimate 
+                         the coefficients (like β0 and β1) that describe the relationship between expenses and sales. 
+                         Each sample will give you slightly different coefficient values.
+
+Variability: Due to randomness and variability in data, the coefficients from different samples might vary. 
+            Some samples might overestimate, some might underestimate.
+
+Convergence to Optimal Solution: However, as you keep collecting and analyzing more samples, 
+                                you notice that the mean (average) of these coefficient values tends to stabilize or converge around certain values. This convergence is like the many shots at the target you mentioned earlier—individual shots might miss, but the average of many shots gets closer to the bullseye.
+
+Approximating Optimal Solution: When you observe that this mean of coefficients doesn't change significantly as 
+                                you collect more samples, you can say that you've approximated an optimal solution. 
+                                This means that, on average, you're capturing the true relationship between TV expenses and sales,
+                                even though individual samples might show some variability.
+
+Confidence in Estimates: You can also use confidence intervals to quantify how confident you are that your 
+                        estimated coefficients are close to the true population values. 
+                        If these intervals become narrower and stabilize, it's another indicator of approaching an optimal solution.
